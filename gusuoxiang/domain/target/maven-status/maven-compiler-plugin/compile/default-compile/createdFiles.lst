@@ -1,0 +1,8 @@
+com\lin\domain\Experience.class
+com\lin\domain\Shop.class
+com\lin\domain\UserCourse.class
+com\lin\domain\UserCollectCourse.class
+com\lin\domain\CourseNote.class
+com\lin\domain\UserCollectExperience.class
+com\lin\domain\Course.class
+com\lin\domain\User.class

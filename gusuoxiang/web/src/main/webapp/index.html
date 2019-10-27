@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conmom.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <div class="body relative">
+        <div class="logo absolute">
+            <img src="img/logo.png" alt=""><img src="img/title.png" alt="">
+        </div>
+        <div class="login-box relative" id="login_box">
+            <div class="login-left">
+                <div class="login-title">
+                    <div class="title-l">登 录 |</div>
+                    <div class="title-r">S I G N &nbsp;I N</div>  
+                </div>
+                <span class="login-username relative">
+                    <i class="absolute icon-user"></i><input type="text" placeholder="email" id="email" maxlength="20"/>
+                </span>
+                <span class="login-password relative">
+                    <i  class="absolute icon-switch"></i> <input type="password" placeholder="password" id="password" maxlength="14" >
+                </span>
+
+                <span class="login-checkcode relative" >
+                    <i  class="absolute icon-forward"></i><input id="code" type="text" placeholder="checkcode" maxlength="4" >
+                </span>
+
+                <div id="login_tip">
+                </div>
+                <div id="checkcode" title="点位换一个">
+                </div>
+                
+                <input class="button"  id="login" type="button" value="登&nbsp;&nbsp;&nbsp;录">
+                <input class="button" type="button" value="注&nbsp;&nbsp;&nbsp;册" id="register">
+               
+            
+        </div>
+        <div class="login-jianbian absolute" id="login_r">
+                <div class="jianbian-r absolute" id="jianbian_r"></div>
+                <div class="jianbian-g absolute" id="jianbian_g"></div>
+                <div class="jianbian-b absolute" id="jianbian_b"></div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <script >
+
+        window.onload = function(){
+
+
+
+
+        var register = document.getElementById("register");
+         
+         register.onclick = function () {
+             location.href = "register.html";
+         }
+
+
+         email.onblur = function () {
+                 console.log("ssss");
+                 var pattern = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                 console.log(pattern.test(email.value));
+                 if(pattern.test(email.value)) {
+                     this.style.border = "green solid 2px";
+                 }else if(email.value === ""){
+                     this.style.border = "rgb(156, 145, 150) solid 2px";
+                 }
+                 else{
+                     this.style.border = "red solid 2px";
+                 }
+             }
+
+         
+             password.onblur = function () {
+                 var pattern = /^[a-zA-Z]\w{5,17}$/;
+                 if(pattern.test(password.value)){
+                     this.style.border = "green solid 2px";
+                 }else if(password.value === ""){
+                     this.style.border = "rgb(156, 145, 150) solid 2px";
+                 }else{
+                     this.style.border = "red solid 2px";
+                 }
+             }
+
+         var login = document.getElementById("login");
+         login.onclick = function () {
+             var email = document.getElementById("email");
+             var password = document.getElementById("password");
+             
+             if(email.value === "" || password.value === ""){
+                 var login_tip = my$("login_tip");
+                 login_tip.innerText = "邮箱和密码不能为空";
+                 return;
+             }
+             var checkcode = document.getElementById("checkcode");
+             var code = document.getElementById("code"); 
+
+             $.ajax(
+                 {
+                     type:'post',
+                     dataType:'json',
+                     url:'http://localhost/loginServlet',  // 填写地址
+                     data:{'email':email.value,'password':password.value,'checkcode':code.value},
+                     success:function (data) {
+                         var login_tip = my$("login_tip");
+                         if(data.flag == true){  // 登陆成功
+                             location.href = "main.html";  // 登录成功跳转到登录成功界面
+                         }else {
+                             login_tip.innerHTML = "登录失败，" + data.errorMsg; //打印错误信息
+                         }
+                     },
+                     error:function () {
+                         console.log("出错了");
+                     }
+                 }
+             );
+         };
+
+
+
+//  点击更换验证码
+         var checkcode = document.getElementById("checkcode");
+
+         $.ajax(
+                {
+                     type:'post',
+                     dataType:'json',
+                     url:'http://localhost/checkCodeServlet',  // 填写更换验证码的servlet地址
+                    
+                     success:function (data) {
+                         var newcode = data.code; // 新验证码
+                         checkcode.innerHTML = newcode;
+                     },
+                     error:function () {
+                         console.log("出错了");
+                     }
+                 }
+            );
+
+         checkcode.onclick = function () {
+            $.ajax(
+                {
+                     type:'post',
+                     dataType:'json',
+                     url:'http://localhost/checkCodeServlet',  // 填写更换验证码的servlet地址
+                    
+                     success:function (data) {
+                         var newcode = data.code; // 新验证码
+                         checkcode.innerHTML = newcode;
+                     },
+                     error:function () {
+                         console.log("出错了");
+                     }
+                 }
+            );
+         }
+        }
+            
+    </script>
+    </div>
+</body>
+</html>

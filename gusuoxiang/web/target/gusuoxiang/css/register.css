@@ -1,0 +1,267 @@
+.body {
+    
+    width: 1536px;
+    height: 740px;
+
+    background-size: 1536px 740px;
+}
+
+.bg {
+    width: 1536px;
+    height: 740px;
+}
+
+.register-box {
+    font-weight: 300;
+    box-sizing: border-box;
+    left: 800px;
+    top: 214px;
+    height: 350px;
+    width: 640px;
+    /* background-color: pink; */
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.input input {
+    overflow: hidden;
+    border: none;
+    outline: none;
+    height: 26px;
+    padding-left: 6px;
+    width: 190px;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-family: "微软雅黑"
+    
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.input {
+    display: inline-block;
+    margin-bottom: 35px;
+    height: 30px;
+    width: 280px;
+    /* background-color: yellow; */
+    border: solid 2px #f3b639;
+    margin-right: 20px;
+}
+
+.choose input {
+    cursor: pointer;
+    background-color:  #f3b639;
+    width: 30px;
+    border:solid #ccc 1px;
+}
+
+
+
+.label {
+    padding: 0 10px 0 10px;
+    /* background-color: blue; */
+    border-right: solid 2px #ccc;
+    display: inline-block;
+    height: 24px;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.choose {
+    display: block;
+    margin-bottom: 35px;
+    width: 640px;
+    /* background-color: #fff; */
+    height: 30px;
+    font-weight: 900;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+
+.radiobox {
+    display:inline-block;
+}
+  .radiobox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+      padding-left: 5px;line-height:19px;
+     }
+  .radiobox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 0;
+    margin-left: -15px;
+    border: 2px solid #f37a09;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0,0);
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out; }
+  .radiobox label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 3px;
+    margin-left: -15px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+  .radiobox input[type="radio"] {
+      opacity: 0;
+      z-index: 1; }
+  
+  .radiobox input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  .radiobox input[type="radio"]:disabled + label {
+    opacity: 0.65; }
+  .radiobox input[type="radio"]:disabled + label::before {
+    cursor: not-allowed; }
+  .radiobox.radio-inline {
+    margin-top: 0; }
+  
+  .radiobox input[type="radio"] + label::after {
+    background-color: #e97b32; }
+
+select {
+    padding-left: 12PX;
+    border: solid 2px #f3b639;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+    line-height: 22px;
+    cursor: pointer;
+    color: #b47c0b;
+    background-color: rgba(0,0,0,0);
+    appearance:none;  
+    -moz-appearance:none;  
+    -webkit-appearance:none;
+     background: url("../img/arrow.png") no-repeat scroll right center transparent;
+     background-size: 25px 22px;
+     padding-right: 14px;
+     outline: none;
+     
+
+}
+select .option {
+    margin-top: 6px;
+    margin-right: 40px;
+    border: #52504e 3px solid;
+    background-color: #f3b639;
+    color: #fff;
+    height: 50px;
+    transition: all .3s;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+    outline: none !important;
+    border: none;
+    
+   
+}
+select .option:hover {
+    background-color: #52504e !important;
+   
+    font-size: 40px;
+}
+
+.submit {
+    top: 300px;
+    left: 50%;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    transform: translateX(-50%);
+    border: solid 2px #f3b639;
+    background-color: #e69f0d;
+    transition: all .3s;
+    cursor: pointer;
+    box-shadow:  0px 3px 3px rgb(223, 87, 19)
+    
+
+}
+.han {
+    font-family: "微软雅黑";
+    word-spacing: 6px;
+    display: inline-block;
+    /* background-color: blue; */
+    height: 32px;
+    width: 90px;
+    margin: 5px 0 0 -12px;
+    line-height: 35px;
+    border-right: 1px solid rgb(245, 215, 215);
+    
+}
+.han
+.ying {
+    display: inline-block;
+}
+
+.ying {
+    display: inline-block;
+    height: 32px;
+    width: 60px;
+    line-height: 32px;
+    font-weight: 900;
+    font-family: "微软雅黑";
+    padding-left: 6px;
+}
+
+
+.submit:hover {
+    
+    box-shadow:  0px 5px 5px rgb(223, 87, 19);
+}
+
+
+.grade {
+    margin-left: 82px;
+}
+
+
+
+.code {
+    display: inline-block;
+    transition: all 0.3s;
+    width: 126px;
+    color:  rgb(223, 87, 19);
+    text-align: center;
+    background-color: rgb(248, 235, 178);
+    font-weight: 700;
+    font-family: "微软雅黑";
+}
+
+.code:hover {
+    font-weight: 900;
+    background-color: rgb(255, 235, 148);
+}
+
+.codeinput {
+    width: 80px !important;
+}
+
+.register_tip {
+    color: red;
+   
+}

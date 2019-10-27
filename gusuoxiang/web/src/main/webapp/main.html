@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/conmom.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body">
+
+        <div class="pop-bg" id="pop_bg">
+
+            </div>
+        <div class="popframe relative" id="popframe">
+            <div class="exit absolute" id="exit">x</div>
+            <div class="enter absolute" id="enter">确定</div>
+            <div class="element relative">
+                <span class="absolute bigname" id="bigname1">吉他</span>
+                <select class="absolute"   id="xuanze">
+                    <option value="吉他" selected>吉他</option>
+                    <option value="四级">四级</option>
+                    <option value="java">java</option>
+                </select>
+                <span class="absolute span1">目标<input type="text" name="" id="span1input1"    placeholder="写出你的目标"></span>
+                <span class="absolute span2">期限<input type="number" name="" id="span1input2"  placeholder="完成预计天数"></span>
+            </div>
+            <div class="element relative">
+                <span class="absolute bigname" id="bigname2">吉他</span>
+                <select class="absolute"   id="xuanze2">
+                    <option value="吉他" selected>吉他</option>
+                    <option value="四级">四级</option>
+                    <option value="java">java</option>
+                </select>
+                <span class="absolute span1">目标<input type="text" id="span2input1" name=""   placeholder="写出你的目标"></span>
+                <span class="absolute span2">期限<input type="number" id="span2input2" name="" placeholder="完成预计天数"></span>
+            </div>
+            <div class="element relative">
+                <span class="absolute bigname" id="bigname3">吉他</span>
+                <select class="absolute"   id="xuanze3">
+                    <option value="吉他" selected>吉他</option>
+                    <option value="四级">四级</option>
+                    <option value="java">java</option>
+                </select>
+                <span class="absolute span1">目标<input id="span3input1" type="text" name=""     placeholder="写出你的目标"></span>
+                <span class="absolute span2">期限<input id="span3input2"  type="number" name=""  placeholder="完成预计天数"></span>
+            </div>
+        </div>
+
+       
+
+
+        <div class="head body radio-inline">
+            <nav class="container relative">
+                <div class="title absolute inb">
+                    <img  src="img/logo_main.png" alt="我是logo" title="我是logo">
+                    <img  src="img/title.png" alt="我是title" title="我是title">
+                </div>
+                <div class="search-box inb absolute">
+                    <input type="text" placeholder="搜你所要"><i class="inb .icon-search"></i>
+                </div>
+                <div class="stu-shop inb absolute">
+                    <div class="study inb">我的学习</div>
+                    <div class="shop inb">购物车</div>
+                </div>
+                 <div class="admin absolute right">
+                    <!--<span class="inb" id="login">登录</span>-->
+                    <!--<span class="inb" id="reg">注册</span>-->
+                     <span class="inb" id="myname">1111</span>
+                    <img src="img/touxiang.png" alt="">
+                </div>
+            </nav>
+
+            <div class="container sideshow">
+                <div class="img-show">
+                    <div class="img relative">
+                        <img id="img1"  src="img/side_show01.png" alt="我是轮播图" title="我是轮播图">
+                        <img id="img2"  src="img/sideshow-pic02.jpg" alt="我是轮播图" title="我是轮播图">
+                        <img id="img3"  src="img/sideshow-pic03.jpg" alt="我是轮播图" title="我是轮播图">
+                        <img id="img4"  src="img/sideshow-pic04.jpg" alt="我是轮播图" title="我是轮播图">
+                    </div>
+                </div>
+                <div class="index">
+                    <ul>
+                        <li index="0" class="active" id="li1"></li>
+                        <li index="1" id="li2"></li>
+                        <li index="2" id="li3"></li>
+                        <li index="3" id="li4"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 主体部分 -->
+        <div class="mian-show">
+            <div class="target container">
+                <div class="lside inb">
+                    <div class="cur">当前目标</div>
+                    <div class="tar">TARGET</div>
+                </div>
+                <div class="mside inb relative">
+                    <span class="inb">吉他</span>
+                    <label class="inb absolute" for="mu">目标</label><div class="mu inb absolute" id="mu">学吉他</div>
+                    <label class="inb absolute ljin" for="jin">进度</label><div class="jin inb absolute" id="jin"></div>
+                </div>
+                <div class="rside inb relative">
+                    <span class="inb">六级</span>
+                    <label class="inb absolute" for="mu">目标</label><div class="mu inb absolute" id="mu2">英语六级</div>
+                    <label class="inb absolute ljin" for="jin">进度</label><div class="jin inb absolute" id="jin2"></div>
+                </div>
+            </div>
+            <div class="funtion container">
+                <div class="title-fun container">
+                    <div class="course inb" id="course">
+                        <div class="c-z">课程</div>
+                        <div class="c-e">COURSE</div>
+                    </div>
+                    <div class="exep inb" id="exep">
+                        <div class="l-z">学习经验</div>
+                        <div class="l-e">EXPERIENCE</div>
+                    </div>
+                    <div class="shopp inb" id="shopp">
+                        <div class="s-z">商城</div>
+                        <div class="s-e">SHOP</div>
+                    </div>
+                </div>
+                <div class="show-frame container relative">
+                    <div class="show-all absolute" id="show_all">
+                        <div class="show-1 container inb" id="show_1">
+                            <div class="inb elment">
+                                <div class="ele-box">
+                                    <div class="up relative">
+                                        <img src="img/1_img-01.png" >
+                                        <i class="absolute"></i>
+                                    </div>
+                                    <div class="bottom">
+                                            <a href="videoshow.html?url=dcourseUrl&title=data[i].classname&number=learningNumber" ><h1>aaaaaaaaaaaaaa</h1></a>
+                                        <p><i>基础</i>-1124人在学习-</p>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                            <div class="inb elment">
+                                    <div class="ele-box">
+                                        <div class="up relative">
+                                            <img src="img/1_img-01.png" >
+                                            <i class="absolute"></i>
+                                        </div>
+                                        <div class="bottom">
+                                            <h1>android网络图片加载基础详解</h1>
+                                            <p><i>基础</i>-1124人在学习-</p>
+                                        </div>
+                                    </div>   
+                            </div>
+                        </div>
+                        <div class="show-2 container inb">
+                            <div class="exep-l inb relative">
+                                    <!--<div class="tip absolute">-->
+                                        <!--<div class="t-text">-->
+                                            <!--<h1>-->
+                                                <!--减少脱发的方法-->
+                                            <!--</h1>-->
+                                                <!--方法/步骤1:<br/>-->
+                                                <!--<p>-->
+                                                    <!--换一把梳子，改用木梳或牛角梳会减少脱发<br/>-->
+                                                    <!--因为木梳子或牛角梳子会减小与头皮的摩擦<br/>-->
+                                                    <!--力，保护头皮，减少掉发。-->
+                                                <!--</p>-->
+                                                    <!---->
+                                                <!--方法/步骤2:-->
+                                                <!--<p>-->
+                                                    <!--经常洗头，以保持头皮环境干净<br/>-->
+                                                    <!--如果不经常洗头，会导致毛囊口被油脂阻塞<br/>-->
+                                                    <!--，会适得其反，最合理的是一周洗两次头。<br/>-->
+                                                <!--</p>-->
+                                                   <!---->
+                                                <!--方法/步骤3:-->
+                                                <!--<p>-->
+                                                    <!--使用正确的洗头方法<br/>-->
+                                                    <!--先将洗发水打出泡沫，再涂抹在头皮上；不<br/>-->
+                                                    <!--要在头发没有干的情况下过度梳头，因为头<br/>-->
+                                                    <!--发打湿后，毛鳞片化处于舒张状态，受损。  -->
+                                                <!--</p>-->
+                                                   <!---->
+                                        <!---->
+                                          <!---->
+                                        <!--</div>-->
+                                        <!--</div>-->
+                                <div class="exepl-box inb relative">
+                                   
+                                    <img src="img/touxiang.png"  id="tx_1"  >
+                                    <div class="say inb relative">
+                                        <i class="absolute icon-circle-left"></i>
+                                        <h1>张麻子</h1>
+                                        <h3>#关于如何防止脱发的小妙招</h3>
+                                        <h2><i>赞成</i>-1124-<i>反对</i>-1124-</h2>
+                                    </div>
+                                  
+                                </div>
+                                <div class="exepl-box inb relative">
+                                        <img src="img/touxiang.png">
+                                        <div class="say inb relative">
+                                            <i class="absolute icon-circle-left"></i>
+                                            <h1>张麻子</h1>
+                                            <h3>#关于如何防止脱发的小妙招</h3>
+                                            <h2><i>赞成</i>-1124-<i>反对</i>-1124-</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exepl-box inb relative">
+                                            <img src="img/touxiang.png">
+                                            <div class="say inb relative">
+                                                <i class="absolute icon-circle-left"></i>
+                                                <h1>张麻子</h1>
+                                                <h3>#关于如何防止脱发的小妙招</h3>
+                                                <h2><i>赞成</i>-1124-<i>反对</i>-1124-</h2>
+                                            </div>
+                                        </div>
+                                        <div class="exepl-box inb relative">
+                                                <img src="img/touxiang.png">
+                                                <div class="say inb relative">
+                                                    <i class="absolute icon-circle-left"></i>
+                                                    <h1>张麻子</h1>
+                                                    <h3>#关于如何防止脱发的小妙招</h3>
+                                                    <h2><i>赞成</i>-1124-<i>反对</i>-1124-</h2>
+                                                </div>
+                                            </div>
+                                            <div class="exepl-box inb relative">
+                                                    <img src="img/touxiang.png">
+                                                    <div class="say inb relative">
+                                                        <i class="absolute icon-circle-left"></i>
+                                                        <h1>张麻子</h1>
+                                                        <h3>#关于如何防止脱发的小妙招</h3>
+                                                        <h2><i>赞成</i>-1124-<i>反对</i>-1124-</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="exepl-box inb relative">
+                                                        <img src="img/touxiang.png">
+                                                        <div class="say inb relative">
+                                                            <i class="absolute icon-circle-left"></i>
+                                                            <h1>张麻子</h1>
+                                                            <h3>#关于如何防止脱发的小妙招</h3>
+                                                            <h2><i>赞成</i>-1124-<i>反对</i>-1124-</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="exepl-box inb relative">
+                                                            <img src="img/touxiang.png">
+                                                            <div class="say inb relative">
+                                                                <i class="absolute icon-circle-left"></i>
+                                                                <h1>张麻子</h1>
+                                                                <h3>#关于如何防止脱发的小妙招</h3>
+                                                                <h2><i>赞成</i>-1124-<i>反对</i>-1124-</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="exepl-box inb relative">
+                                                                <img src="img/touxiang.png">
+                                                                <div class="say inb relative">
+                                                                    <i class="absolute icon-circle-left"></i>
+                                                                    <h1>张麻子</h1>
+                                                                    <h3>#关于如何防止脱发的小妙招</h3>
+                                                                    <h2><i>赞成</i>-1124-<i>反对</i>-1124-</h2>
+                                                                </div>
+                                                            </div>
+                            </div>
+                            <div class="exep-r inb">
+                                <div class="r-box">
+                                    <div class="r-title">
+                                        <img src="img/r_exep_title.png" alt="">
+                                    </div> 
+                                    <div class="r-ph">
+                                            <ul>
+                                                <li class="relative"><i class="relative">1</i>张麻子</li>
+                                                <li class="relative"><i class="relative">2</i>李麻子</li>
+                                                <li class="relative"><i class="relative">3</i>林麻子</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                        </div>
+                        <div class="show-3 container inb">
+                            <div class="s3-title">
+                                <span>好评<i class="icon-circle-right"></i></span>
+                                <span>价格<i class="icon-circle-right"></i></span>
+                                <span>销量<i class="icon-circle-right"></i></span>
+                            </div>
+                                <div class="inb elment mr">
+                                        <div class="ele-box relative">
+                                            <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                            <div class="author inb absolute">
+                                                <h1 class="">《Java从入门到放弃》</h1>
+                                                <h1 class="">作者：一刀</h1>
+                                                <h1 class="">￥<i>12.00</i></h1>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="inb elment mr">
+                                            <div class="ele-box relative">
+                                                <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                                <div class="author inb absolute">
+                                                    <h1 class="">《Java从入门到放弃》</h1>
+                                                    <h1 class="">作者：一刀</h1>
+                                                    <h1 class="">￥<i>12.00</i></h1>
+                                                </div>
+                                            </div>   
+                                    </div>
+                                    <div class="inb elment mr">
+                                            <div class="ele-box relative">
+                                                <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                                <div class="author inb absolute">
+                                                    <h1 class="">《Java从入门到放弃》</h1>
+                                                    <h1 class="">作者：一刀</h1>
+                                                    <h1 class="">￥<i>12.00</i></h1>
+                                                </div>
+                                            </div>   
+                                    </div>
+                                    <div class="inb elment">
+                                            <div class="ele-box relative">
+                                                <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                                <div class="author inb absolute">
+                                                    <h1 class="">《Java从入门到放弃》</h1>
+                                                    <h1 class="">作者：一刀</h1>
+                                                    <h1 class="">￥<i>12.00</i></h1>
+                                                </div>
+                                            </div>   
+                                    </div>
+                                    <div class="inb elment">
+                                            <div class="ele-box relative">
+                                                <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                                <div class="author inb absolute">
+                                                    <h1 class="">《Java从入门到放弃》</h1>
+                                                    <h1 class="">作者：一刀</h1>
+                                                    <h1 class="">￥<i>12.00</i></h1>
+                                                </div>
+                                            </div>   
+                                    </div>
+                                    <div class="inb elment">
+                                            <div class="ele-box relative">
+                                                <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                                <div class="author inb absolute">
+                                                    <h1 class="">《Java从入门到放弃》</h1>
+                                                    <h1 class="">作者：一刀</h1>
+                                                    <h1 class="">￥<i>12.00</i></h1>
+                                                </div>
+                                            </div>   
+                                    </div>
+                                    <div class="inb elment">
+                                            <div class="ele-box relative">
+                                                <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                                <div class="author inb absolute">
+                                                    <h1 class="">《Java从入门到放弃》</h1>
+                                                    <h1 class="">作者：一刀</h1>
+                                                    <h1 class="">￥<i>12.00</i></h1>
+                                                </div>
+                                            </div>   
+                                    </div>
+                                    <div class="inb elment">
+                                            <div class="ele-box relative">
+                                                <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                                <div class="author inb absolute">
+                                                    <h1 class="">《Java从入门到放弃》</h1>
+                                                    <h1 class="">作者：一刀</h1>
+                                                    <h1 class="">￥<i>12.00</i></h1>
+                                                </div>
+                                            </div>   
+                                    </div>
+                                    <div class="inb elment">
+                                            <div class="ele-box relative">
+                                                <div class="book inb absolute"><img src="img/book01.png" alt=""></div>
+                                                <div class="author inb absolute">
+                                                    <h1 class="">《Java从入门到放弃》</h1>
+                                                    <h1 class="">作者：一刀</h1>
+                                                    <h1 class="">￥<i>12.00</i></h1>
+                                                </div>
+                                            </div>   
+                                    </div>
+                                  
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="container pagebean relative">
+                <span class="relative">首页</span>
+                <span class="relative">上一页</span>
+                    <ul class="inb">
+                        <li class="on">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                    <span class="relative">下一页</span>
+                    <span class="relative">尾页</span>
+            </div>
+        </div>
+
+        <div class="body main-btm">
+
+        </div>
+
+
+
+
+
+         <div class="loading absolute" id="loading">
+               <div class="loadingbar">
+                        <div class="pass" id="pass">
+                        </div>
+                </div>
+            </div>
+            
+
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+
+
+
+
+        window.onload = function () {
+
+            $.ajax(
+                {
+                    type: 'post',
+                    dataType: 'json',
+                    url: '/findUserServlet',  // 填写页面加载的地址
+
+                    success: function (data) {
+                        console.log(data.courseTypes === null);
+                        if (data.courseTypes === null) {
+                            setTimeout(function () {
+                                var pop_bg = document.getElementById("pop_bg");
+                                var popframe = document.getElementById("popframe");
+                                pop_bg.style.display = 'block';
+                                popframe.style.display = 'block';
+                            },2000);
+                            var exit = document.getElementById("exit");
+                            var pop_bg = document.getElementById("pop_bg");
+                            var popframe = document.getElementById("popframe");
+                            exit.onclick = function () {
+                                pop_bg.style.display = 'none';
+                                popframe.style.display = 'none';
+                            }
+                        }
+
+                        var myname = document.getElementById("myname");
+                        myname.innerText = data.nickname; //放入名字
+                    }
+
+
+                }
+            );
+
+            $.ajax(
+                {
+                     type:'post',
+                     dataType:'json',
+                     url:'/findCourseServlet',  // 填写页面加载的地址
+                    
+                     success:function (data) {
+                        // 渲染课程数据
+                        var show_1 = document.getElementById("show_1");
+                         var str = "";
+                         for(var i = 0; i < 12; i++) {
+
+                            console.log(data[i].coursePhoto);
+                            str += '<div class="inb elment">'
+                            +  '     <div class="ele-box"> '
+                            +  '         <div class="up relative"> '
+                            +  '             <img src=" ' + data[i].coursePhoto +  '" > '
+                            +  '             <i class="absolute"></i> '
+                            +  '         </div> '
+                            +  '         <div class="bottom"> '
+                            +  '             <a href=videoshow.html?'+ "url=" + data[i].courseUrl +'&title='+data[i].courseName+'&number='+data[i].learningNumber +' ><h1>'+ data[i].courseName +'</h1></a> '
+                                        // 传视频的url以及相关数据到视频播放的界面当中去
+                            +  '             <p><i>'+ data[i].difficultGrade +'</i>-'+data[i].learningNumber+'人在学习-</p> '
+                            +  '         </div> '
+                            +  '     </div>    '
+                            +  ' </div>'
+                         }
+
+                         console.log(str);
+
+                         show_1.innerHTML = str;
+
+
+
+//                         页码渲染：
+
+                         var lis = "";
+                         for(var i = 0; i < data[0].totalPage;i++){
+                             if(i == 0){
+                                 lis += '<li class="on">'+ (i + 1) +'</li>'
+                             }
+                             lis += '<li>'+ (i + 1) +'</li>'
+                         }
+                         var str2 = "";
+                         str2 = '<span class="relative">首页</span>';
+                         + ' <span class="relative">上一页</span>'
+                         + '<ul class="inb">'
+                         + lis
+                         + ' </ul>'
+                         + ' <span class="relative">下一页</span>'
+                         + ' <span class="relative">尾页</span>';
+                     },
+                     error:function () {
+                         console.log("出错了");
+                     }
+                 }
+            );
+            }
+
+
+    </script>
+</body>
+</html>

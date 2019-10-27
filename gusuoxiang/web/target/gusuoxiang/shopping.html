@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/conmom.css">
+    <link rel="stylesheet" href="css/shopping.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="shopping-bg">
+        <div class="nav relative">
+            <div class="search-box inb absolute">
+                <input type="text" placeholder="搜你所要"><i class="inb .icon-search"></i>
+            </div>
+            <div class="stu-shop inb absolute">
+                <div class="study inb">我的学习</div>
+                <div class="shop inb">购物车</div>
+            </div>
+            <div class="admin">
+                <span class="inb absolute" id="myname">MyNane</span>
+                <img class="absolute" src="img/touxiang.png" alt="">
+            </div>
+        </div>
+        <a href="main.html"><span class="absolute return">返回主页</span></a>
+        <div class="inb bookframe relative">
+            <img src="img/book_shopping.png" class="absolute" >
+            <div class="title inb absolute">java8实战</div>
+            <div class="price inb absolute">88.88￥</div>
+            <div class="pl-jy inb absolute">
+                累计评论<i id="pinglun">56</i> <i>|</i> 交易成功<i id="jiaoyi">256</i>
+            </div>
+            <div class="number absolute">
+                <i>+</i><span>5</span><i>-</i>
+            </div>
+            <div class="bg absolute">
+                <span class="span1"><input type="text">收货人</span>
+                <span><input type="text">收货电话</span>
+                <span><input type="text">确认地址</span>
+            </div>
+            <div class="buy absolute">立即购买</div>
+            <div class="car absolute">加入购物车</div>
+        </div>
+        <div class="introduce absolute">
+            <div class="element inb">
+                <img src="img/book_shopping.png" alt="">
+                <div class="jiage">20.00￥</div>
+            </div>
+            <div class="element inb">
+                <img src="img/book_shopping.png" alt="">
+                <div class="jiage">20.00￥</div>
+            </div>
+            <div class="element inb">
+                <img src="img/book_shopping.png" alt="">
+                <div class="jiage">20.00￥</div>
+            </div>
+            <div class="element inb">
+                <img src="img/book_shopping.png" alt="">
+                <div class="jiage">20.00￥</div>
+            </div>
+        </div>
+        <div class="main-t absolute">
+            <div class="product inb" id="product">
+                <div class="top">产品详细</div>
+                <div class="bottom" >PRODUCT DETLAIS</div>
+            </div>
+            <div class="review inb" id="review">
+                <div class="top">评论</div>
+                <div class="bottom">COMMENT AREA</div>
+            </div>
+        </div>
+
+        <div class="showframe relative">
+            <div class="bigbox absolute" id="box">
+                <div class="showbox">
+                    <div class="box" id="box">
+                            <div class="content" id="content">
+                                <img src="img/productdata.png" alt="">
+                            </div>
+                        <div class="scroll" id="scroll">
+                            <div class="bar" id="bar"></div>
+                        </div>     
+                    </div>
+
+
+
+                    <div class=" pagebean relative">
+                        <span class="relative">首页</span>
+                        <span class="relative">上一页</span>
+                            <ul class="inb">
+                                <li class="on">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                            </ul>
+                            <span class="relative">下一页</span>
+                            <span class="relative">尾页</span>
+                    </div>
+                    
+                </div>
+                <div class="showbox">
+                        <div class="box" id="box">
+                                <div class="content" id="content">
+                                   
+                                </div>
+                            <div class="scroll" id="scroll">
+                                <div class="bar" id="bar"></div>
+                            </div>     
+                        </div>
+                        <div class=" pagebean relative">
+                            <span class="relative">首页</span>
+                            <span class="relative">上一页</span>
+                                <ul class="inb">
+                                    <li class="on">1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                </ul>
+                                <span class="relative">下一页</span>
+                                <span class="relative">尾页</span>
+                        </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script>
+        var box = my$("box");
+        var product = my$("product");
+        var review = my$("review");
+        product.style.borderBottom = " #f6bc7c solid 2px";
+        product.onclick = function () {
+            this.style.borderBottom = " #f6bc7c solid 2px";
+            review.style.borderBottom = "";
+            this.style.color = "#f6bc7c";
+            review.style.color = "#000";
+            animate(box,0,2000);
+        };
+        
+
+        review.onclick = function () {
+            this.style.borderBottom = " #f6bc7c solid 2px";
+            product.style.color = "#000";
+            product.style.borderBottom = "";
+            this.style.color = "#f6bc7c";
+            animate(box,-1100,2000);
+        };
+
+
+
+        
+                // 滚动条
+                var box = my$("box");
+            
+            var content = my$('content');
+
+            var scroll = my$('scroll');
+
+            var bar = my$('bar');
+            
+            //1 根据内容的大小，计算滚动条的高度
+            //  滚动条的高度 / scroll的高度 = box的高度 / 内容的高度
+            // offsetHeight     元素的大小 + padding + border
+            // clientHeight     元素的大小 + padding
+            // scrollHeight     内容的大小 + padding
+            
+            // 当内容的高度大于box的高度，再计算 滚动条的高度，否则的话滚动条的高度为0
+            var barHeight = 0;
+            console.log(content.scrollHeight);
+            console.log(box.clientHeight);
+
+            if (content.scrollHeight > box.clientHeight) {
+                barHeight = box.clientHeight / content.scrollHeight * scroll.clientHeight;
+            }
+            bar.style.height = barHeight + 'px';
+            
+            //2 让滚动条能够拖拽
+            // 2.1 当鼠标按下的时候，求鼠标在滚动条中的位置
+            bar.onmousedown = function (e) {
+                e = e || window.event;
+
+                // 鼠标在滚动条中的位置
+                var y = getPage(e).pageY - bar.offsetTop - box.offsetTop;
+                // 2.2 当鼠标在页面上移动的时候，求滚动条的位置
+                document.onmousemove = function (e) {
+                    //求滚动条的位置
+                    var barY = getPage(e).pageY - y - box.offsetTop;
+
+                    // 控制bar不能移除scroll
+                    barY = barY < 0 ? 0 : barY;
+                    barY = barY > scroll.clientHeight - bar.clientHeight ? scroll.clientHeight - bar.clientHeight : barY;
+
+                    bar.style.top = barY + 'px';
+
+                    //3 当拖拽滚动条的时候，改变内容的位置
+                    
+                    // 内容滚动的距离 / 内容最大能够滚动的距离 = 滚动条滚动的距离 / 滚动条最大能够滚动的距离
+                    
+                    // 内容最大能够滚动的距离
+                    var contentMax = content.scrollHeight - box.clientHeight;
+                    // 滚动条最大能够滚动的距离
+                    var barMax = scroll.clientHeight - bar.clientHeight;
+
+                    var contentY = barY / barMax * contentMax;
+                    content.style.top = -contentY + 'px';
+                }
+            }
+
+            document.onmouseup = function () {
+                // 移除鼠标移动的事件
+                document.onmousemove = null;
+            }
+    
+
+
+
+
+    </script>
+</body>
+</html>

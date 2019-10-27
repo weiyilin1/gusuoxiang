@@ -1,0 +1,211 @@
+.body {
+    overflow: hidden;
+    width: 1536px;
+    height: 740px;
+    /* background-color: pink; */
+    background: url("../img/bg_login.jpg") no-repeat;
+    background-size: 1536px 740px;
+}
+
+.logo {
+    top: 30px;
+    left: 20px;
+
+}
+.logo img {
+    width: 150px;
+    height: 100px;
+}
+
+.logo img:nth-child(1) {
+    opacity: .9;
+}
+
+.logo img:nth-child(2) {
+    margin-top: 30px;
+    margin-left: -40px;
+    height: 70px;
+    width: 100px;
+}
+.login-box {
+    border: solid 3px rgb(156, 145, 150);
+    border-radius: 10px;
+    margin: 140px auto;
+    height: 350px;
+    width: 650px;
+     
+}
+
+
+.login-jianbian {
+    position: absolute;
+    right: -525px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/jianbian_login.png") ;
+    height: 400px;
+    width: 335px;
+    border-radius: 10px;
+    display: none;
+}
+
+ .jianbian-r {
+    opacity: 0 ;
+    margin-left: 54px;
+    height: 330px;
+    width: 40px;
+    background-color: rgba(245, 86, 86, 0.3);
+}
+
+.jianbian-g {
+    opacity: 0 ;
+    margin-left: 150px;
+    height: 270px;
+    width: 40px;
+    background-color: rgba(80, 241, 80, 0.3);
+}
+
+
+ .jianbian-b {
+    opacity: 0 ;
+    margin-left: 240px;
+    height: 300px;
+    width: 40px;
+    background-color: rgba(36, 157, 187, 0.3);
+}
+
+.login-left {
+    height: 100%;
+    width: 325px;
+    /* background-color: pink; */
+}
+
+.login-left .login-title {
+    overflow: hidden;
+    height: 60px;
+    padding-left: 25px;
+    line-height: 60PX;
+    margin-left: 10px;
+    /* background-color: blue; */
+    color: rgb(255, 255, 211);
+    font-size: 24px;
+    border-bottom:solid 1px rgb(156, 145, 150);
+    /* word-spacing: 2px; */
+
+} 
+.login-left .login-title div {
+    display: inline-block;
+}
+
+.login-left .login-title .title-r {
+    font-size: 20px;
+}
+
+.login-left span {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    /* background-color: skyblue; */
+    /* border: 1px solid #000; */
+   
+}
+
+.login-left span input {
+    display: inline-block;
+    margin:  20px 25px;
+    padding-left: 40px;
+    font-size: 16px;
+    outline: none;
+    width: 230px;
+    height: 35px;
+    border-radius: 40px;
+    border: solid 3px rgb(156, 145, 150);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(228, 228, 111);
+
+}
+
+.login-left span i {
+    top: 26px;
+    left: 40px;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 16px !important;
+    line-height: 25px;
+   
+}
+
+.checkcode {
+    height: 30px;
+    width: 60px;
+    color: rgb(255, 255, 211);
+}
+
+.login-left .button {
+    box-sizing: border-box;
+    margin-left: 40px;
+    /* margin-top: 30px; */
+    outline: 0;
+    margin-top: 5px;
+    width: 100px;
+    height: 35px;
+    border-radius: 40px;
+    border: rgb(190, 187, 187) solid 1px;
+    font-size: 16px;
+    transition: all 0.3s;
+
+}
+
+.login-left .button:hover {
+    width: 104px;
+    height: 38px;
+    margin-left: 36px;
+    background-color: rgb(150, 152, 153);
+    color: rgb(228, 228, 111);
+    box-shadow: 2px 2px rgba(208, 208, 212, 0.3); 
+}
+
+#checkcode {
+    display: inline-block;
+    margin: 10px 0 10px 0px;
+    border: rgb(190, 187, 187) solid 1px;
+    border-radius: 10px;
+    font-family: "微软雅黑";
+    height: 30px;
+    width: 70px;
+    /* background-color: #fff; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: yellow;
+    word-spacing: 4em;
+    transition: all 0.3s;
+}
+
+#checkcode:hover {
+    color: yellow;
+    font-weight: 700;
+    
+}
+
+#login_tip {
+    display: inline-block;
+    font-size: 16px;
+    color: red;
+    line-height: 34px;
+    margin-top: 2px;
+    margin-left: 25px;
+    border-radius: 10px;
+    height: 34px;
+    width: 200px;
+    text-align: center;
+    /* background-color: green; */
+    border-bottom: rgb(190, 187, 187) solid 1px;
+}
+
+

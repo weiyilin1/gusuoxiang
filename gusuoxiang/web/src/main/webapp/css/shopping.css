@@ -1,0 +1,515 @@
+.shopping-bg {
+    width: 1280px;
+    height: 1800px;
+    background: url("../img/bg_shopping.png");
+    background-size: 1280px 1800px;
+    margin: 0 auto;
+}
+
+
+
+.nav {
+    height: 86px;
+    width: 100%;
+    /* background-color: pink; */
+    /* border: solid 2px rgb(172, 20, 20); */
+}
+
+
+.search-box {
+    top: 28px;
+    left: 334px;
+    background-color: #b6996e;
+    box-sizing: border-box;
+}
+.search-box input {
+    cursor: pointer;
+    height: 30px;
+    width: 260px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding-left: 20px;
+}
+
+.search-box i {
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 28px;
+    font-family: "icomoon";
+    font-size: 20px;
+    height: 10px;
+    width: 10px;
+    transition: all .3s;
+}
+
+.search-box i:hover {
+    color: #fff;
+}
+
+
+.stu-shop {
+    cursor: pointer;
+    top: 28px;
+    left: 760px;
+    height: 30px;
+    width: 150px;
+    font-size: 14px;
+    /* background-color: rgb(207, 76, 76); */
+}
+
+.stu-shop .study {
+    border-right: 1px solid #fff;
+    /* background-color: rgb(194, 39, 65); */
+    margin-top: 3px;
+    color: #fff;
+    height: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    padding-right: 14px;
+    transition: all .3s;
+}
+
+.stu-shop .shop {
+    padding-left: 4px;
+    margin-top: 3px;
+    color: #fff;
+    height: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    transition: all .3s;
+}
+
+.stu-shop .study:hover,
+.stu-shop .shop:hover {
+    color: #fcd49b;
+}
+
+.admin {
+    float: right;
+    cursor: pointer;
+    top: 28px;
+    left: 975px;
+}
+
+.admin span {
+    /* background-color: #fff; */
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    color:#fcd49b;
+    left: 970px;
+}
+
+.admin span:hover {
+    border-bottom: #b6996e solid 1px;
+    color: #f8eede;
+}
+
+.admin img {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 65px;
+    width: 65px;
+    left: 1070px;
+    border-radius: 50%;
+    /* background-color: rgb(226, 26, 59); */
+}
+
+
+
+
+.return {
+    cursor: pointer;
+    height: 35px;
+    width: 160px;
+    right: 268px;
+    top: 130px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #f8b551;
+    border-radius: 5px;
+    font-size: 20px;
+    border: solid 2px #000;
+    transition: all 0.3s;
+}
+
+.return:hover {
+    color: #FFF;
+}
+
+
+
+.bookframe {
+    top: 126px;
+    left: 92px;
+    height: 400px;
+    width: 800px;
+    /* background-color: pink; */
+}
+
+.bookframe img {
+    top: 30px;
+    left: 30px;
+    height: 300px;
+    width: 250px;
+    z-index: 222;
+}
+
+.title,
+.price,
+.pl-jy {
+    color: #b99056;
+}
+
+.title {
+    height: 50px;
+    width: 220px;
+    /* background-color: #fff; */
+    font-size: 30px;
+    top: 58px;
+    left: 360px;
+    font-weight: 700;
+    cursor: pointer;
+   
+}
+
+.price {
+    height: 50px;
+    width: 220px;
+    /* background-color: #fff; */
+    font-size: 20px;
+    top: 98px;
+    left: 360px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bg {
+    overflow: hidden;
+}
+
+.bg span {
+    position: relative;
+    top: 0;
+    left: 109px;
+    display: block;
+    height: 30px;
+    background-color: #a68a44;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 6px;
+    width: 260px;
+   
+}
+
+.bg input {
+    height: 26px;
+    margin-right: 10px;
+}
+
+
+
+.pl-jy {
+    cursor: pointer;
+    height: 30px;
+    width: 300px;
+    top: 104px;
+    left: 460px;
+
+}
+
+.number {
+    cursor: pointer;
+    top: 134px;
+    left: 360px;
+}
+
+.number i {
+    overflow: hidden;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #a68a44;
+    color: #FFF;
+    line-height: 35px;
+    font-size: 24px;
+    text-align: center;
+    font-family: "微软雅黑" !important;
+    font-weight: 700;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.number span{
+    display: inline-block;
+    overflow: hidden;
+    height: 40px;
+    width: 80px;
+    background-color: #fff;
+    color: #000;
+    font-family: "微软雅黑" !important;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.number i:hover {
+    color: #000;
+}
+
+.bookframe .bg {
+    top: 182px;
+    left: 250px;
+    height: 120px;
+    width: 540px;
+    background-color: #d3aa5b;
+    z-index: 0;
+}
+
+.buy,
+.car {
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    width: 156px;
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #a68a44;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.buy {
+    top: 334px;
+    left: 360px;
+}
+
+.car {
+    top: 334px;
+    left: 560px;
+}
+
+.buy:hover {
+    color: #000;
+}
+
+.car:hover {
+    color: #000;
+}
+
+.introduce {
+    top: 242px;
+    right: 227px;
+    width: 240px;
+    height: 366px;
+    box-sizing: border-box;
+    /* background-color: pink; */
+}
+
+.introduce .element {
+    overflow: hidden;
+    width: 114px;
+    height: 180px;
+    /* border: #000 solid 1px; */
+}
+
+.introduce .element img {
+    margin-left: 8px;
+    height: 150px;
+    width: 100px;
+}
+
+.element .jiage {
+    color: #8c703a;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.main-t {
+    cursor: pointer;
+    top: 654px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 45px;
+    width: 600px;
+    /* background-color: pink; */
+    box-sizing: border-box;
+}
+
+.main-t .product {
+    height: 45px;
+    
+    transition: all .3s;
+    margin-right: 150px;
+    margin-left: 100px;
+
+}
+
+.main-t .product:hover,
+.main-t .review:hover {
+    color: #f6bc7c;
+}
+
+.main-t div {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.showframe {
+    top: 230px;
+    left: 90px;
+    height: 750px;
+    width: 1100px;
+    overflow: hidden;
+    /* background-color: pink; */
+}
+
+.bigbox {
+    width: 2500px;
+}
+
+.showframe .showbox {
+    height: 750px;
+    width: 1100px;
+    /* border: #000 solid 1px; */
+    float: left;
+}
+
+
+
+/* 滚动条部分 */
+.box {
+    cursor: pointer;
+    width: 900px;
+    height: 480px;
+    /* border: 1px solid red; */
+    /* background-color: yellow; */
+    margin: 100px;
+    position: relative;
+    overflow: hidden;
+
+    /* 不让文字被选中 */
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+
+.content {
+    padding: 5px 18px 5px 5px;
+    position: absolute;
+    height: 400px;
+    top: 0;
+    left: 0;
+
+}
+.scroll {
+    width: 6px;
+    height: 400px;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    background-color: #f1deb9;
+    border: #ccc solid 2px;
+    border-radius: 8px;
+}
+
+
+.bar {
+    height: 100px;
+    border-radius: 4px;
+    width: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    border-radius:  10px;
+    cursor: pointer;
+}
+
+.box img {
+   height: 1100px;
+}
+
+
+
+
+
+
+/* 分页部分 */
+.pagebean {
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: #fcd49b;
+    height: 30px;
+    width: 520px;
+    border: 2px solid #e9cc7f;
+    font-family: "微软雅黑";
+    border-radius: 5px;
+}
+
+.pagebean span {
+    display: inline-block !important;
+    height: 24px;
+    width: 50px;
+    background-color: #fff;
+    top: -7px;
+    line-height: 24px;
+    text-align: center;
+    transition: all .3s;
+    margin-left: 1px;
+}
+.pagebean span:hover {
+    background-color: #e9b31e;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, .3) 2px 2px 2px;
+}
+.pagebean ul {
+    overflow: hidden;
+}
+.pagebean li {
+    margin-top: 4px;
+    float: left;
+    height: 24px;
+    width: 30px;
+    
+    line-height: 26px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 20px;
+    transition: all .3s;
+}
+
+.pagebean li:hover {
+    background-color: #e9b31e;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, .3) 2px 2px 2px;
+}
+
+.on {
+    background-color: #e9b31e!important;
+    box-shadow: rgba(0, 0, 0, .3) 2px 2px 2px;
+    color: #fff;
+}
+
+
+
+
+/* 分页部分 */
+
+
+
+
+
+

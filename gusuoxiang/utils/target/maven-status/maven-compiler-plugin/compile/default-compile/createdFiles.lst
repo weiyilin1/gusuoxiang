@@ -1,0 +1,4 @@
+com\lin\utils\UuidUtil.class
+com\lin\utils\ResultInfo.class
+com\lin\utils\JDBCUtils.class
+com\lin\utils\MailUtils.class
